@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "golf_clubs/index"
   get "products/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -20,4 +21,9 @@ Rails.application.routes.draw do
   # get 'products/:id', to: 'products#show'
   # patch 'products/:id', to: 'products#update'
   # delete 'products/:id', to: 'products#destroy'
+
+
+  root "golf_clubs#index" #The root of this application is now the index action of the ProductsController
+
+  resources :golf_clubs
 end

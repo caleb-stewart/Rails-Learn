@@ -1,0 +1,14 @@
+<h1>Here is a list of Golf Clubs</h1>
+
+<h3>Here are the names of Aidens golf clubs:</h3>
+<br/>
+<div>
+<% @golf.each do |g| %> 
+    <div>
+        <%= g.club_type %>
+        <%= g.brand %>
+
+    </div>
+<% end %>
+</div>
+
